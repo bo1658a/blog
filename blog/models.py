@@ -1,6 +1,6 @@
 from django.db import models
 
-class Post(models.model):
+class Post(models.Model):
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=200)
     body = models.TextField()
@@ -8,4 +8,4 @@ class Post(models.model):
 
     def __str__(self):
         return self.title
-        
+
