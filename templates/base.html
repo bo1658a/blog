@@ -1,22 +1,21 @@
-<!-- templates/base.html -->
 {% load static %}
- <html>
-
- <head>
+<!DOCTYPE html>
+<html>
+<head>
     <title>Bob blog</title>
- </head>
-
-
- <body>
-  <header>
-  <h1><a href="{% url 'home' %}">Bob blog</a></h1>
-  </header>
-  <div>
-  {% block content %}
-  {% endblock content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital@0;1&display=swap" rel="stylesheet">
+ <link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'home' %}">Bob blog</a></h1>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock content %}
     </div>
-  </body>
-
-
-
- </html>
+</body>
+</html>
